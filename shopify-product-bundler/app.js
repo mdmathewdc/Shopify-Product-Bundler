@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post('/', (req, res) => {
     res.send({ message: 'Hello Niceyyy!' });
-    console.log(req.body);
+    console.log(req.body.line_items);
 });
 
 app.listen(3000, () => {
