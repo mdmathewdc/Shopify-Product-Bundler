@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const fs = require("fs");
+var https = require("follow-redirects").https;
 const { off } = require("process");         //JSON file reading modueles
 
 app.post("/", (req, res) => {
@@ -31,15 +32,17 @@ function updateQuantity(variant_id, quantity) {
 
   // print all databases
   databases.forEach((db) => {
-    console.log(db.variant_id);
+    // console.log(db.variant_id);
 
-    if(db.variant_id === variant_id) {
+    if(db.id == variant_id) {
+
+      console.log ("Variant id matched");
 
         for (var key in db.adjuncts) {
             console.log("Variant id :" + key);                     //inventory_item_id
             console.log("Quantity :" + db.adjuncts[key]);        //quantity
 
-            // makePostRequest(key, db.adjuncts[key]);
+             makePostRequest(key, db.adjuncts[key]);
         }
 
     }
@@ -52,15 +55,13 @@ function makePostRequest(inventory_item_id, quantity) {
 
   console.log("Make Post Request Invoked");
   
-  var https = require("follow-redirects").https;
-  var fs = require("fs");
-
   var options = {
     method: "POST",
     hostname: "beerco-pty-ltd.myshopify.com",
     path: "/admin/api/2021-07/inventory_levels/adjust.json",
     headers: {
       "Content-Type": "application/json",
+      "Authorization": "Basic NWUwYzlkMGVlNzg5OTc1MTQ3ZWJkNzBkNWQ3MWNiMWY6c2hwcGFfMmQ4ZTdkMDRjOTFiYzk2OWJjZGU3NjRkMjUyYjA2ODY="
     },
     maxRedirects: 20,
   };
