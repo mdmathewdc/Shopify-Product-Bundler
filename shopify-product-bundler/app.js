@@ -8,14 +8,16 @@ app.use(express.json());
 // If you expect webhooks as application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
+const fs = require('fs');
+const { off } = require('process');
+
 
 app.post('/', (req, res) => {
     // res.send({ message: 'Node.js Server has received the data!' });
     res.status(200).json({ message: 'Node.js Server has received the data!' });
     // console.log(req.body.line_items);
+
     req.body.line_items.forEach(element => {
-        // console.log(element.variant_id);
-        // console.log(element.quantity);
 
         updateQuantity(element.variant_id, element.quantity);
 
@@ -25,7 +27,36 @@ app.post('/', (req, res) => {
 
 function updateQuantity(variant_id, quantity) {
 
-    console.log(variant_id + " " + quantity);
+    // console.log(variant_id + " " + quantity);
+
+    const data = fs.readFileSync('./database.json', 'utf8');
+
+        // parse JSON string to JSON object
+        const databases = JSON.parse(data);
+
+        Object.keys(databases).forEach(function(key) {
+
+            console.log(key);
+            console.log(databases[key]);
+          
+          });
+
+        // print all databases
+        databases.forEach(db => {
+            console.log(db.variant_id);
+
+            // if(db.variant_id === variant_id) {
+                console.log(db.adjuncts);
+                
+                for (var key in db.adjuncts) {
+                    console.log(key);
+                    console.log(db.adjuncts[key]);
+                }
+            
+            // }
+       
+            console.log(`$`)
+        });
 
 }
 
