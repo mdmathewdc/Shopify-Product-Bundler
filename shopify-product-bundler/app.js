@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const fs = require("fs");
-const { off } = require("process");
+const { off } = require("process");         //JSON file reading modueles
 
 app.post("/", (req, res) => {
   // res.send({ message: 'Node.js Server has received the data!' });
@@ -33,22 +33,24 @@ function updateQuantity(variant_id, quantity) {
   databases.forEach((db) => {
     console.log(db.variant_id);
 
-    // if(db.variant_id === variant_id) {
+    if(db.variant_id === variant_id) {
 
-    for (var key in db.adjuncts) {
-      console.log(key); //inventory_item_id
-      console.log(db.adjuncts[key]); //quantity
+        for (var key in db.adjuncts) {
+            console.log("Variant id :" + key);                     //inventory_item_id
+            console.log("Quantity :" + db.adjuncts[key]);        //quantity
 
-    //   makePostRequest(key, db.adjuncts[key]);
+            makePostRequest(key, db.adjuncts[key]);
+        }
+
     }
 
-    // }
-
-    console.log(`$$$$$$$$$$$$$$$$$$$$$$`);
+    console.log(`$$`);
   });
 }
 
 function makePostRequest(inventory_item_id, quantity) {
+
+  console.log("Make Post Request Invoked");
   
   var https = require("follow-redirects").https;
   var fs = require("fs");
@@ -95,6 +97,8 @@ function makePostRequest(inventory_item_id, quantity) {
   req.write(postData);
 
   req.end();
+
+  console.log("POST request successful!");
 }
 
 app.listen(3000, () => {
