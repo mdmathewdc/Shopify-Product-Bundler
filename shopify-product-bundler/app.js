@@ -22,7 +22,7 @@ app.post("/", (req, res) => {
 });
 
 function updateQuantity(variant_id, quantity) {
-  console.log(variant_id + " " + quantity);
+  console.log(variant_id + " - " + quantity);
 
   const data = fs.readFileSync("./database.json", "utf8");
 
@@ -39,7 +39,7 @@ function updateQuantity(variant_id, quantity) {
             console.log("Variant id :" + key);                     //inventory_item_id
             console.log("Quantity :" + db.adjuncts[key]);        //quantity
 
-            makePostRequest(key, db.adjuncts[key]);
+            // makePostRequest(key, db.adjuncts[key]);
         }
 
     }
@@ -101,6 +101,6 @@ function makePostRequest(inventory_item_id, quantity) {
   console.log("POST request successful!");
 }
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Application listening on port 3000!");
 });
