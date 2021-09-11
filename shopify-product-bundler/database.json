@@ -204,7 +204,6 @@
         }
     },
 
-    //START WITH BANKS
 
     {
         "id": "39325993336878",
@@ -278,7 +277,6 @@
 
 
 
-//Billy - Lager - BeerCo All Grain Brewers Recipe Kit
 
 
 
@@ -317,7 +315,6 @@
 },
 
 
-//BLANCHE WITBIER
 
 
 
@@ -417,7 +414,6 @@
 
 
 
-//californication
 
 
 
@@ -530,7 +526,6 @@
 
 
 
-//CHOICE NEW ZEALAND
 
 
 {
@@ -618,7 +613,6 @@
 },
 
 
-//Code - Lager - BeerCo All Grain Recipe Kit
 
 
 {
@@ -685,7 +679,6 @@
 },
 
 
-//Darek | Oatmeal Stout Whisky | Distillers Kit - NEW!
 
 {
     "id": "39466759520302",
@@ -707,7 +700,6 @@
     }
 },
 
-//Dee | American Whiskey Recipe Kit
 
 {
     "id": "39355739045934",
@@ -724,7 +716,6 @@
     }
 },
 
-//Deleterious - Double IIPA - BeerCo All Grain Brewers Recipe Kit
 
 {
     "id": "32750134329390",
@@ -760,7 +751,6 @@
     }
 },
 
-//Delores - Brut IPA - BeerCo All Grain Recipe Kit
 
 {
     "id": "14899214188590",
@@ -801,7 +791,6 @@
     }
 },
 
-//Double Bounce - Oat Cream DDH IPA - BeerCo All Grain Kit
 
 
 {
@@ -840,7 +829,6 @@
 
 
 
-//Eclipse® - XPA - BeerCo All Grain Brewers Recipe Kit
 
 
 {
@@ -874,7 +862,6 @@
 },
 
 
-//einkorn | Wheat Vodka All Grain Recipe Kit
 
 {
     "id": "39362786918446",
@@ -892,7 +879,6 @@
     }
 },
 
-//Fall Over - IPA - BeerCo All Grain Recipe Kit
 
 
 {
@@ -929,7 +915,6 @@
     }
 },
 
-//French Toast - Double Brown Ale
 
 
 {
@@ -971,7 +956,6 @@
     }
 },
 
-//Fresh Jack - IPA - BeerCo All Grain Recipe Kit
 
 
 
@@ -1009,7 +993,6 @@
     }
 },
 
-//Garage - Hefe - BeerCo All Grain Recipe Kit
 
 
 
@@ -1044,11 +1027,6 @@
 },
 
 
-
-//Glen | Scottish Single Malt Whisky Recipe Kit 
-
-
-
 {
     "id": "39436305072174",
     "adjuncts": {
@@ -1065,7 +1043,6 @@
     }
 },
 
-//Grim - RRIPA
 
 
 {
@@ -1102,7 +1079,6 @@
     }
 },
 
-//GTP - Pale Ale - BeerCo Recipe Kit
 
 
 {
@@ -1139,7 +1115,6 @@
     }
 },
 
-//Harrowing - Oatmeal Stout
 
 
 
@@ -1173,7 +1148,6 @@
     }
 },
 
-//Harvest - Saison
 
 
 {
@@ -1206,7 +1180,6 @@
     }
 },
 
-//Hazy Jack - NEIPA
 
 
 
@@ -1249,7 +1222,6 @@
     }
 },
 
-//Hazy Trucker - NEIPA
 
 
 {
@@ -1295,7 +1267,6 @@
     }
 },
 
-//Helmut - Berliner - BeerCo
 
 
 {
@@ -1330,7 +1301,6 @@
     }
 },
 
-//Hof - Cold IPA - BeerCo All Grain Brewers Kit
 
 
 
@@ -1374,7 +1344,6 @@
 },
 
 
-//Howzat - Gose - BeerCo All Grain Recipe Kit
 
 {
     "id": "31524891852846",
@@ -1408,7 +1377,6 @@
     }
 },
 
-//Jim Tom | American Rye Whiskey Distillers Recipe Kit
 
 {
     "id": "39511697358894",
@@ -1427,7 +1395,6 @@
     }
 },
 
-//Kiwi As
 
 
 {
@@ -1464,7 +1431,6 @@
     }
 },
 
-//Kunekune - Manuka Smoked Porter
 
 
 {
@@ -1497,7 +1463,6 @@
     }
 },
 
-//Maineliner - IPA
 
 
 {
@@ -1539,7 +1504,6 @@
     }
 },
 
-//Mathew | Molasses Rum Recipe Kit
 
 {
     "id": "39294792597550",
@@ -1552,7 +1516,6 @@
 
 },
 
-//Milli - Vanilla Porter
 
 {
     "id": "16370072387630",
@@ -1595,7 +1558,6 @@
 
 },
 
-//Mower - Cream Ale - BeerCo All Grain Recipe Kit
 
 
 {
@@ -1628,7 +1590,6 @@
     }
 },
 
-//Oblivion - Double IPA 
 
 
 {
@@ -1673,9 +1634,7 @@
     }
 },
 
-//Oktoberfest - Märzenbier 
 
-//Puffing Peat - Smoked Bock
 
 {
     "id": "8208378134629",
@@ -1718,7 +1677,6 @@
 
 },
 
-//Remember Me? - ESB
 
 {
     "id": "12116385923173",
@@ -1750,7 +1708,6 @@
     }
 },
 
-//Resistance - Kölsch
 
 
 {
@@ -1784,7 +1741,6 @@
 },
 
 
-//RESPECT - Brown Ale
 
 
 {
@@ -1817,7 +1773,6 @@
     }
 },
 
-//Roada - Session Ale
 
 
 {
@@ -1861,7 +1816,6 @@
 
 },
 
-//Ruby - Strong Mild
 
 
 {
@@ -1894,7 +1848,6 @@
     }
 },
 
-//Sofy - Vienna Lager
 
 {
     "id": "39510731292718",
@@ -1926,7 +1879,6 @@
     }
 },
 
-//Split - Red IPA
 
 {
     "id": "16613675335726",
@@ -1969,7 +1921,6 @@
 
 },
 
-//Starstruck - Chocolate Milk Stout
 
 
 {
@@ -2013,7 +1964,6 @@
 
 },
 
-//Sunday - Hazy Pale Ale
 
 
 
@@ -2059,7 +2009,6 @@
 },
 
 
-//The Mule - American Amber Ale
 
 {
     "id": "8208371351653",
@@ -2091,7 +2040,6 @@
     }
 },
 
-//Toby - Vanilla Oatmeal Stout
 
 
 {
@@ -2133,7 +2081,6 @@
     }
 },
 
-//Trans Pacific Partners - American Wit
 
 
 
@@ -2178,7 +2125,6 @@
 
 },
 
-//Two Heads - IPA
 
 {
     "id": "32732520808494",
@@ -2210,7 +2156,6 @@
     }
 },
 
-//Viper - XPA
 
 
 {
@@ -2252,9 +2197,8 @@
 
     }
 
-}
+},
 
-//Anthony - Single Trappist Ale
 
 
 {
@@ -2288,7 +2232,6 @@
 },
 
 
-//Dicks - Dry Irish 
 
 
 {
@@ -2321,7 +2264,6 @@
     }
 },
 
-//einkorn | Wheat Vodka
 
 {
     "id": "39362786918446",
@@ -2345,7 +2287,6 @@
     }
 },
 
-//Gordon - Mocha Porter
 
 
 {
@@ -2378,7 +2319,6 @@
     }
 },
 
-//Jimmy | Scottish Peated Whisky
 
 {
     "id": "39361983938606",
@@ -2401,7 +2341,6 @@
 
 },
 
-//Oktoberfest - Märzenbier
 
 
 {
@@ -2434,7 +2373,6 @@
     }
 },
 
-//Swing Hard Seltzer
 
 
 {
