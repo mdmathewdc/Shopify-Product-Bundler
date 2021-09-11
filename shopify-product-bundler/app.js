@@ -12,6 +12,12 @@ const fs = require("fs");
 var https = require("follow-redirects").https;
 const { off } = require("process");         //JSON file reading modueles
 
+app.get("/", (req,res) => {
+
+  res.send("Shopify bundler GET request...");
+
+});
+
 app.post("/", (req, res) => {
   // res.send({ message: 'Node.js Server has received the data!' });
   
