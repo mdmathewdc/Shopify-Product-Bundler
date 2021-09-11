@@ -14,12 +14,15 @@ const { off } = require("process");         //JSON file reading modueles
 
 app.post("/", (req, res) => {
   // res.send({ message: 'Node.js Server has received the data!' });
-  res.status(200).json({ message: "Node.js Server has received the data!" });
+  
   // console.log(req.body.line_items);
 
   req.body.line_items.forEach((element) => {
     updateQuantity(element.variant_id, element.quantity);
   });
+
+  res.status(200).json({ message: "Node.js Server has received the data!" });
+  
 });
 
 function updateQuantity(variant_id, quantity) {
@@ -84,7 +87,7 @@ function makePostRequest(inventory_item_id, quantity) {
   });
 
   var params = {};
-  params.location_id = 285966342;           //BeerCo Warehouse Location ID
+  params.location_id = 285966342;                //BeerCo Warehouse Location ID
   params.inventory_item_id = inventory_item_id;
   params.available_adjustment = quantity * -1;
   var postData = JSON.stringify(params);
