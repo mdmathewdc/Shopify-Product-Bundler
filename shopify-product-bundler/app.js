@@ -22,7 +22,7 @@ app.post("/", (req, res) => {
   });
 
   res.status(200).json({ message: "Node.js Server has received the data!" });
-  
+
 });
 
 function updateQuantity(variant_id, quantity) {
@@ -91,12 +91,6 @@ function makePostRequest(inventory_item_id, quantity) {
   params.inventory_item_id = inventory_item_id;
   params.available_adjustment = quantity * -1;
   var postData = JSON.stringify(params);
-
-//   var postData = JSON.stringify({
-//     location_id: 285966342,
-//     inventory_item_id: 33098662936622,
-//     available_adjustment: -1,
-//   });
 
   req.write(postData);
 
