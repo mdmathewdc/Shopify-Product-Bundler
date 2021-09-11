@@ -27,7 +27,7 @@ app.post("/", (req, res) => {
     updateQuantity(element.variant_id, element.quantity);
   });
 
-  res.status(200).json({ message: "Node.js Server has received the data!" });
+  res.status(200).json({ message: "Node.js Server has received the data!", ordereditems: req.body.line_items });
 
 });
 
